@@ -6,64 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Inicio - Ferretería Martín </title>
     <!-- CSS BOOTSTRAP LOCAL -->
-    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- CSS PROPIO -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- JAVASCRIPT BOOTSTRAP LOCAL -->
-    <script src="js/bootstrap.js"></script>
-    <header class="container">
-        <img src="img/logo.png" class="container" alt="Logo">
-    </header>
-    <!-- Menu de navegación -->
-   <nav>
-        <span><a href="index.html">INICIO </a></span>
-        <span><a href="contacto.html"> CONTACTO </a></span>
-        <span>NOSOTROS</span>           
+  <!-- JAVASCRIPT BOOTSTRAP LOCAL -->
+  <script src="js/bootstrap.js"></script>
+  <header class="container">
+      <img src="img/logo.png" class="container" alt="Logo">
+  </header>
+  <!-- Menu de navegación -->
+  <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Ferretería Martín</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cliente</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+          <!-- Busqueda en menú -->
+          <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar un producto" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+        </div>
     </nav>
-    <!-- Categorias de productos -->
-    <aside class="col-md-4">
-        <span> HERRAMIENTAS ELECTRICAS</span>
-        <span> HERRAMIENTAS MANUALES</span>
-        <span> PILETAS E HIDROMASAJES</span>
-        <span> PINTURAS</span>
-        <span> ELECTRICIDAD</span>
-    </aside>
-
-    <section class="container text-center">
-        <!-- Producto 1 -->
-            <article class="col-md-4">
-                <p> HIDROLAVADORA LUSQTOFF</p> 
-                <p> HL-150 </p>
-                    <ul>
-                        <img src="img/hidrolavadora.png" alt="Hidrolavadora">
-                        <li> Tensión: <span> 220 - 50 Hz</span> </li>
-                        <li> Potencia: <span> 1200W </span> </li>
-                        <li> Presión: <span> 70 bar </span> </li>
-                        <li> Caudal: <span> 6.8 lts/min</span> </li>
-                        <li> Largo manguera: <span>3 metros</span> </li>
-                        <li> Peso: <span> 5.2kg </span> </li>
-                    </ul>
-            </article>
-    <!-- Producto 2 -->
-            <article class="col-md-4">
-                <p> MOTOSIERRA LUSQTOFF </p> 
-                <p> GS-3800</p>
-                    <img src="img/motosierra.png" alt="Motosierra"> 
-                        <ul>
-                            <li> Tensión: <span> 220 - 50 Hz</span> </li>
-                            <li> Potencia: <span> 1200W </span> </li>
-                            <li> Presión: <span> 70 bar </span> </li>
-                            <li> Caudal: <span> 6.8 lts/min</span> </li>
-                            <li> Largo manguera: <span>3 metros</span> </li>
-                            <li> Peso: <span> 5.2kg </span> </li>
-                        </ul>
-            </article>
-    </section>
-
-    <!-- Pie de página -->
-        <footer class="lead">
-            <p> Desarrollado por nahu</p>
+    <section>
+    <p class="display-3 text-center"><strong> Productos </strong></p>
+    <!-- Carrousel de productos -->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide container-fluid" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/hidrolavadora.png" class="d-block w-100" alt="hidrolavadora">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Herramientas eléctricas</h5>
+                <p>Hidrolavadora Lusqtoff HL-120</p>
+            </div>
+          </div>
+            <div class="carousel-item">
+            <img src="img/motosierra.png" class="d-block w-100" alt="motosiera">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Herramientas eléctricas</h5>
+                <p>Motosierra Lusqtoff GS-3800</p>
+              </div>
+            </div>
+              <div class="carousel-item">
+                <img src="img/amoladora.png" class="d-block w-100" alt="amoladora">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Herramientas eléctricas</h5>
+                  <p>Amoladora 1010W Lusqtoff AML1010-8</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+      </section>
+      <!-- Fin de carrousel -->
+      <!-- Pie de página -->
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted"> Desarrollado por Nahu </p>
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+            <li class="nav-item"><a href="productos.html" class="nav-link px-2 text-muted">Productos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Cliente</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
+          </ul>
         </footer>
-</body>
+        <!-- Cierre de pie -->
+      </div>
     <!-- Cierre de body -->
+    </body>
 </html>

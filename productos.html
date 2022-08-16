@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Productos - Ferretería Martín </title>
+    <!-- CSS BOOTSTRAP LOCAL -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<!-- Inicio de body -->
+<body>
+    <!-- JAVASCRIPT BOOTSTRAP LOCAL -->
+    <script src="js/bootstrap.js"></script>
+    <header class="container">
+        <img src="img/logo.png" class="container" alt="Logo">
+    </header>
+    <!-- Menu de navegación -->
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Ferretería Martín</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cliente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                </ul>
+            <!-- Busqueda en menú -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar un producto" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <!-- Categorias de productos -->
+        <section>
+            <div class="row bg-light">
+                <aside class="col-md-3 bg-dark">
+                    <ul class="navbar-nav">
+                        <li class="nav-item text-bg-secondary p-3"> HERRAMIENTAS ELÉCTRICAS </li>
+                        <li class="nav-item text-bg-secondary p-3"> HERRAMIENTAS MANUALES </li>
+                        <li class="nav-item text-bg-secondary p-3"> PILETAS E HIDROMASAJES </li>
+                        <li class="nav-item text-bg-secondary p-3"> PINTURAS </li>
+                        <li class="nav-item text-bg-secondary p-3"> ELECTRICIDAD </li>
+                    </ul>
+                </aside>
+            <!-- Producto 1 -->
+            <article class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/hidrolavadora.png" class="card-img-top" alt="hidrolavadora">
+                    <div class="card-body">
+                      <h5 class="card-title">Hidrolavadora Lusqtoff HL-120</h5>
+                      <p class="card-text">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"> Tensión: <span> 220 - 50 Hz</span> </li>
+                                <li class="nav-item"> Potencia: <span> 1200W </span> </li>
+                                <li class="nav-item"> Presión: <span> 70 bar </span> </li>
+                                <li class="nav-item"> Caudal: <span> 6.8 lts/min</span> </li>
+                                <li class="nav-item"> Largo manguera: <span>3 metros</span> </li>
+                                <li class="nav-item"> Peso: <span> 5.2kg </span> </li>
+                            </ul>
+                        </p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+            </article>
+            <!-- Producto 2 -->
+            <article class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                <img src="img/motosierra.png" class="card-img-top" alt="motosierra">
+                    <div class="card-body">
+                    <h5 class="card-title">Motosierra Lusqtoff GS-3800</h5>
+                        <p class="card-text">
+                            <ul class="navbar-nav" class="caracteristicas">
+                                <li class="nav-item"> Motor: <span> 2 T </span></li>
+                                <li class="nav-item"> Cilindrada: <span> 36 cc </span></li>
+                                <li class="nav-item"> Potencia: <span> 2 HP </span></li>
+                                <li class="nav-item"> Espada: <span> 16” </span></li>
+                                <li class="nav-item"> Paso de la Cadena: <span> 3/8 LP </span></li>
+                                <li class="nav-item"> Tanque de nafta: <span> 0.3 lts </span></li>
+                            </ul>
+                        </p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>    
+            </article>
+            <!-- Producto 3 -->
+            <article class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                <img src="img/amoladora.png" class="card-img-top" alt="amoladora">
+                    <div class="card-body">
+                        <h5 class="card-title">Amoladora Lusqtoff AML1010-8</h5>
+                        <p class="card-text">
+                            <ul class="navbar-nav" class="caracteristicas">
+                                <li class="nav-item"> Tensión: <span> 220V-50Hz </span></li>
+                                <li class="nav-item"> Potencia: <span> 1010 W </span></li>
+                                <li class="nav-item"> Velocidad variable: <span> 0-11000 RPM </span></li>
+                                <li class="nav-item"> Máx. de disco de corte: <span> 125mm </span></li>
+                                <li class="nav-item"> Peso: <span> 2,60 Kg </span></li>
+                                <li class="nav-item"> Garantía: <span> 2 años </span></li>
+                            </ul>
+                        </p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+            </article>
+        </section>
+    </main>
+   <!-- Pie de página -->
+   <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted"> Desarrollado por Nahu </p>
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      </a>
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+        <li class="nav-item"><a href="productos.html" class="nav-link px-2 text-muted">Productos</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Cliente</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
+      </ul>
+    </footer>
+    <!-- Cierre de pie -->
+  </div>
+  <!-- Cierre de body -->
+</html>
